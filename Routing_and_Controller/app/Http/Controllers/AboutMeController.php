@@ -1,14 +1,12 @@
 <?php
 
-// About Me Controller
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-
 class AboutMeController extends Controller
 {
-    public function show()
+    public function index()
     {
         $data = [
             'title' => 'About Me',
