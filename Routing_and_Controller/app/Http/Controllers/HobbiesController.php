@@ -1,12 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\Request;
 
+use Illuminate\Http\Request;
 
 class HobbiesController extends Controller
 {
-    public function show()
+    public function index()
     {
         $data = [
             'title' => 'Hobbies',
@@ -16,4 +16,3 @@ class HobbiesController extends Controller
         return view('hobbies', $data);
     }
 }
-
