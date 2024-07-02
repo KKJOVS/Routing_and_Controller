@@ -4,17 +4,15 @@
     <title>Skills</title>
 </head>
 <body>
-    @extends('layouts.app')
+    <h1>Skills</h1>
+    <ul>
+        @foreach ($skills as $skill)
+            <li>{{ $skill }}</li>
+        @endforeach
+    </ul>
 
-    @section('content')
-        <h1>{{ $title }}</h1>
-        <p>{{ $introduction }}</p>
-        <p>{{ $description }}</p>
-    @endsection
-    
-    <h1>{{ $data }}</h1>
-    <button onclick="window.location='{{ route('about.me') }}'">About Me</button>
-    <button onclick="window.location='{{ route('skills') }}'">Skills</button>
-    <button onclick="window.location='{{ route('hobbies') }}'">Hobbies</button>
+    <a href="{{ route('about.me') }}">About Me</a>
+    <a href="{{ route('skills') }}">Skills</a>
+    <a href="{{ route('hobbies') }}">Hobbies</a>
 </body>
 </html>
