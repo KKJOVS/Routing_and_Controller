@@ -6,8 +6,8 @@
 <body>
     <h1>Skills</h1>
     <ul>
-        @foreach ($skills as $skill)
-            <li>{{ $skill }}</li>
+        @foreach ($about_me as $aboutme)
+            <li>{{ $aboutme }}</li>
         @endforeach
     </ul>
 
