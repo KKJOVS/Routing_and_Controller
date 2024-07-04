@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #808080; /* Set background color to gray */
+            background-color: #808080; # Gray Background
         }
         .container {
             text-align: center;
@@ -25,11 +25,14 @@
         }
         h1 {
             font-size: 3em;
-            margin-bottom: 0.5em;
+            margin-bottom: 1.65em; #1.65spacing
         }
-        p {
+        p.description {
             font-size: 1.2em;
-            margin-bottom: 1em;
+            margin-bottom: 4.5em; #4.5spacing
+        }
+        p.links {
+            margin: 0; #removing margin container links
         }
         a {
             text-decoration: none;
@@ -50,8 +53,8 @@
 <body>
     <div class="container">
         <h1>Hello Viewer!</h1>
-        <p>A simple demonstration of routing and controllers</p>
-        <p>
+        <p class="description">A simple demonstration of routing and controllers</p>
+        <p class="links">
             <a href="{{ route('aboutme') }}">About Me</a>
             <a href="{{ route('skills') }}">Skills</a>
             <a href="{{ route('hobbies') }}">Hobbies</a>
