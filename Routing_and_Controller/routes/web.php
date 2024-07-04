@@ -9,6 +9,6 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-Route::get('/about-me', [AboutMeController::class, 'aboutme']);
+Route::get('/about_me', [AboutMeController::class, 'aboutme']);
 Route::get('/skills', [SkillsController::class, 'skills']);
 Route::get('/hobbies', [HobbiesController::class, 'hobbies']);

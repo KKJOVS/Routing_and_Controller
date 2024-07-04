@@ -55,9 +55,9 @@
         <h1>Hello Viewer!</h1>
         <p class="description">A simple demonstration of routing and controllers</p>
         <p class="links">
-            <a href="{{ route('aboutme') }}">About Me</a>
-            <a href="{{ route('skills') }}">Skills</a>
-            <a href="{{ route('hobbies') }}">Hobbies</a>
+            <a href="about_me">About Me</a>
+            <a href="skills">Skills</a>
+            <a href="hobbies">Hobbies</a>
         </p>
     </div>
 </body>
