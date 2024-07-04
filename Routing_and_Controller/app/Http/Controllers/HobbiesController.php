@@ -6,13 +6,8 @@ use Illuminate\Http\Request;
 
 class HobbiesController extends Controller
 {
-    public function index()
+    public function hobbies()
     {
-        $data = [
-            'title' => 'Hobbies',
-            'description' => "Hobbies? I don't know, it depends on the mood. Welcome to the Hobbies page tho!",
-            'hobbies' => ['Playing Online Video Games', 'Watching Anime']
-        ];
-        return view('hobbies', $data);
+        return view('hobbies');
     }
 }
